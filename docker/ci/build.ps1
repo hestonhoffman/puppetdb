@@ -38,11 +38,10 @@ function Build-Container(
     '--build-arg', "build_date=$build_date",
     '--build-arg', "version=$Version",
     '--file', "puppetdb/Dockerfile",
-    '--tag', "$Namespace/puppetdb:$Version",
-    '--tag', "$Namespace/puppetdb:latest"
+    '--tag', "$Namespace/puppetdb:$Version"
   )
 
-  docker build $docker_args puppetdb
+  docker build $docker_args ..
 
   Pop-Location
 }
