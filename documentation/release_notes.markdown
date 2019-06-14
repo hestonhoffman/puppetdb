@@ -19,6 +19,21 @@ canonical: "/puppetdb/latest/release_notes.html"
 
 ---
 
+## PuppetDB 6.0.4
+
+### New features and improvements
+
+- **Order `facts` and `fact-contents` by value.** The v4 `/facts` endpoint now supports ordering by fact value. For more information, see [Facts][facts]. [PUP-3687](https://tickets.puppetlabs.com/browse/PDB-3687)
+
+### Bug fixes
+
+- In previous releases, if the database was inaccessible during startup, PuppetDB could become unkillable. [PUP-4308](https://tickets.puppetlabs.com/browse/PDB-4308)
+
+- Resolved an issue that was causing PuppetDB to crash when performing older database migrations. [PUP-3840](https://tickets.puppetlabs.com/browse/PDB-3840)
+
+- PuppetDB now logs the correct error when an attempt to query a remote PuppetDB server for sync fails. Previously, PuppetDB was incorrectly reporting a `FileNotFoundException`.
+ [PUP-3592](https://tickets.puppetlabs.com/browse/PDB-3592)
+
 ## PuppetDB 6.0.3
 
 ### New features
