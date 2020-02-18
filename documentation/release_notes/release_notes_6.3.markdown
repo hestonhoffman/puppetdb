@@ -20,6 +20,12 @@ canonical: "/puppetdb/latest/release_notes.html"
 
 ---
 
+## PuppetDB 6.3.8
+
+### Bug fixes
+
+- Fixed an issue affecting PE installations where PuppetDB would fail to purge a deactivated node. [PDB-4479](https://tickets.puppetlabs.com/browse/PDB-4479)
+
 ## PuppetDB 6.3.7
 
 ### New features and improvements

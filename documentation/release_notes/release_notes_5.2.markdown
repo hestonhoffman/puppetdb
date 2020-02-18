@@ -17,6 +17,12 @@ canonical: "/puppetdb/latest/release_notes.html"
 [queue_support_guide]: ./pdb_support_guide.html#message-queue
 
 ---
+## PuppetDB 5.2.13
+
+### Bug fixes
+
+- Fixed an issue affecting PE installations where PuppetDB would fail to purge a deactivated node. [PDB-4479](https://tickets.puppetlabs.com/browse/PDB-4479)
+
 
 ## PuppetDB 5.2.12
 
